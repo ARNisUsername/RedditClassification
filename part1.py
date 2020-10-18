@@ -5,7 +5,7 @@ import pandas as pd
 reddit = praw.Reddit(client_id='C4HotN7HiKk-JQ',
                      client_secret='Z7vCqdCnPiucthoPAuXavsQ0fXk',
                      username='ARNisUsername',
-                     password='zero77gold',
+                     password='*******',
                      user_agent='isBasedBot')
 
 

@@ -34,7 +34,6 @@ for submission in Top:
 
 allBased = np.array(allBased)
 based250 = np.array(['based' for i in range(len(allBased))])
-#notBased = np.array(notBased)
 
 df = pd.DataFrame({
     'message':allBased,

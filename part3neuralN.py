@@ -5,7 +5,7 @@ from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.neural_network import MLPClassifier
 from sklearn.pipeline import Pipeline
 
-df = pd.read_csv('updatedBased2.csv')[350:]
+df = pd.read_csv('updatedBased9.csv')
 
 X = df['message']
 y = df['is_based']

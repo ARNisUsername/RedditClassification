@@ -34,5 +34,9 @@ def changeString(theStr):
     docs = [theStr]
     X_new_counts = count_vect.transform(docs)
     return tf_transformer.transform(X_new_counts)
-
+  
+#If you are using first way
 print(clf.predict(changeString("I love this subreddit!")))
+
+#If you are using second way
+print(clf.predict(np.array(["I love this subreddit!"])))

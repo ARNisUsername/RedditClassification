@@ -3,6 +3,7 @@ import pandas as pd
 from sklearn.metrics import confusion_matrix, classification_report
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.neural_network import MLPClassifier
+from sklearn.pipeline import Pipeline
 
 df = pd.read_csv('updatedBased2.csv')[350:]
 

@@ -60,10 +60,7 @@ def convert_string(the_string):
         string_arr.append(theDict[word.lower()])
     for i in range(250-len(string_arr)):
         string_arr.append(0)
-        
     return np.asarray(string_arr).astype(np.float32).reshape(1,250,1)
-
-X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
 
 max_index = list(set(theDict.values()))[-1] + 1
 model = keras.Sequential()
@@ -76,7 +73,6 @@ model.add(keras.layers.Dense(16,activation='relu'))
 model.add(keras.layers.Dense(1,activation='sigmoid'))
 model.compile(optimizer='adam',loss='binary_crossentropy',metrics=['accuracy'])
 model.fit(X, y, epochs=40, batch_size=150, verbose=0)
-
 
 while True:
     the_str = input("Enter message here: ")
